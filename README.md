@@ -26,7 +26,7 @@ The gap, from the upstream's own docs and source:
 - **B-level**: `references/jianying-export.md` §6 验收, item 1 requires
   “脚本自检：读装好的 `draft_info.json` 核对轨道数/段数/时长，媒体登记逐条
   `os.path.exists` 且路径都在草稿目录内。”
-  ([doc lines 74–75](https://github.com/Vincentwei1021/video-shotcraft/blob/main/references/jianying-export.md#L173-L174)).
+  ([doc lines 173–174](https://github.com/Vincentwei1021/video-shotcraft/blob/main/references/jianying-export.md#L173-L174)).
 - **C-level**: no function implements it. `mac_draft.py` has 15 top-level
   functions — `install()` at
   [lines 330–378](https://github.com/Vincentwei1021/video-shotcraft/blob/main/jianying-export/mac_draft.py#L330-L378)
@@ -121,8 +121,8 @@ python3 -m py_compile bin/video-shotcraft-draft-verify tests/test_cli.py
 python3 tests/test_cli.py
 ```
 
-17 tests, including 12 subprocess behaviour tests (input → findings → exit
-code), golden-output comparison and the Mac/Windows entry-drift case. Last run:
+17 tests, all driving the CLI as a subprocess (input → findings → exit code),
+plus golden-output comparison and the Mac/Windows entry-drift case. Last run:
 `Ran 17 tests ... OK` in about 0.7 s on Python 3.12.
 
 Fixtures are synthetic minimal drafts modelled on the format; the `.mp4`/`.mp3`
