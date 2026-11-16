@@ -128,6 +128,14 @@ plus golden-output comparison and the Mac/Windows entry-drift case. Last run:
 Fixtures are synthetic minimal drafts modelled on the format; the `.mp4`/`.mp3`
 files are placeholders, because the checks are about references, not bytes.
 
+Real-world check (manual, not committed because the draft is third-party): the
+populated template in
+[notinmood/JianyingDraft.PY `.draftDemo/Normal/draft_content.json`](https://github.com/notinmood/JianyingDraft.PY/blob/main/.draftDemo/Normal/draft_content.json)
+(17,817 bytes, 12 materials, 2 tracks, 2 segments, Windows absolute media paths)
+returns `rc=0` with 4 warnings: two `J025` uncheckable Windows paths, `J024`
+(no meta in that repo), and `J030` fingerprint fields — no false positives on a
+draft this tool did not author.
+
 ## 与同类项目的差异
 
 - `GuanYixuan/pyCapCut` (753★) **generates** CapCut drafts. This tool never
