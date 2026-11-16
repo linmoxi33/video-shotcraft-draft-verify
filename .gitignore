@@ -10,3 +10,4 @@ vendor/
 *.7z
 .env
 .model-patch.yml
+state/
