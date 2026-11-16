@@ -1,0 +1,19 @@
+{
+  "draft_id": "VS-BROKEN",
+  "draft_materials": [
+    {
+      "type": 0,
+      "value": [
+        {
+          "duration": 1,
+          "file_Path": "Resources/gone.mp3",
+          "id": "r9",
+          "metetype": "music",
+          "type": 0
+        }
+      ]
+    }
+  ],
+  "draft_name": "broken-mac",
+  "tm_duration": 5999999
+}

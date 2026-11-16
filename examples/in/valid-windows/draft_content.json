@@ -1,0 +1,69 @@
+{
+  "canvas_config": {
+    "height": 1080,
+    "ratio": "16:9",
+    "width": 1920
+  },
+  "color_space": 0,
+  "duration": 4000000,
+  "fps": 30.0,
+  "id": "VS-VALID-WIN",
+  "materials": {
+    "texts": [
+      {
+        "content": "{\"text\": \"win\"}",
+        "id": "m-t1",
+        "type": "text"
+      }
+    ],
+    "videos": [
+      {
+        "duration": 4000000,
+        "height": 1080,
+        "id": "m-v1",
+        "material_name": "clip.mp4",
+        "path": "media/clip.mp4",
+        "type": "video",
+        "width": 1920
+      }
+    ]
+  },
+  "platform": {
+    "app_version": "5.9",
+    "os": "windows"
+  },
+  "tracks": [
+    {
+      "id": "t1",
+      "segments": [
+        {
+          "id": "s1",
+          "material_id": "m-v1",
+          "source_timerange": {
+            "duration": 4000000,
+            "start": 0
+          },
+          "target_timerange": {
+            "duration": 4000000,
+            "start": 0
+          }
+        }
+      ],
+      "type": "video"
+    },
+    {
+      "id": "t2",
+      "segments": [
+        {
+          "id": "s2",
+          "material_id": "m-t1",
+          "target_timerange": {
+            "duration": 2000000,
+            "start": 0
+          }
+        }
+      ],
+      "type": "text"
+    }
+  ]
+}

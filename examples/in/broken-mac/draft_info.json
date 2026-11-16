@@ -1,0 +1,119 @@
+{
+  "canvas_config": {
+    "height": 1080,
+    "ratio": "16:9",
+    "width": 1920
+  },
+  "color_space": 0,
+  "duration": 6000000,
+  "fps": 30.0,
+  "id": "VS-BROKEN",
+  "materials": {
+    "audios": [
+      {
+        "duration": 3000000,
+        "id": "m-a1",
+        "name": "music.mp3",
+        "path": "Resources/music.mp3",
+        "type": "extract_music"
+      }
+    ],
+    "texts": [
+      {
+        "content": "{}",
+        "id": "m-t1",
+        "type": "text"
+      }
+    ],
+    "videos": [
+      {
+        "duration": 6000000,
+        "height": 1080,
+        "id": "m-v1",
+        "material_name": "outside.mp4",
+        "path": "../outside.mp4",
+        "type": "video",
+        "width": 1920
+      }
+    ]
+  },
+  "platform": {
+    "app_version": "11.2",
+    "device_id": "D-EXAMPLE",
+    "hard_disk_id": "H-EXAMPLE",
+    "mac_address": "00:00:00:00:00:00",
+    "os": "mac"
+  },
+  "tracks": [
+    {
+      "id": "t1",
+      "segments": [
+        {
+          "id": "s1",
+          "material_id": "m-v1",
+          "source_timerange": {
+            "duration": 8000000,
+            "start": 0
+          },
+          "target_timerange": {
+            "duration": 6000000,
+            "start": 0
+          }
+        },
+        {
+          "id": "s2",
+          "material_id": "m-v1",
+          "source_timerange": {
+            "duration": 1000000,
+            "start": 0
+          },
+          "target_timerange": {
+            "duration": 1000000,
+            "start": 5000000
+          }
+        }
+      ],
+      "type": "video"
+    },
+    {
+      "id": "t2",
+      "segments": [
+        {
+          "id": "s3",
+          "material_id": "m-v1",
+          "source_timerange": {
+            "duration": 2000000,
+            "start": 0
+          },
+          "target_timerange": {
+            "duration": 2000000,
+            "start": 5500000
+          }
+        },
+        {
+          "id": "s4",
+          "material_id": "m-missing",
+          "target_timerange": {
+            "duration": 1000000,
+            "start": 0
+          }
+        }
+      ],
+      "type": "audio"
+    },
+    {
+      "id": "t3",
+      "segments": [
+        {
+          "id": "s5",
+          "material_id": "m-t1",
+          "target_timerange": {
+            "duration": 4000000,
+            "start": 0
+          }
+        }
+      ],
+      "type": "text"
+    }
+  ]
+}

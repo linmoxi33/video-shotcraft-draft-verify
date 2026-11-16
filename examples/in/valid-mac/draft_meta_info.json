@@ -1,0 +1,28 @@
+{
+  "draft_fold_path": "/tmp/valid-mac",
+  "draft_id": "VS-VALID-MAC",
+  "draft_materials": [
+    {
+      "type": 0,
+      "value": [
+        {
+          "duration": 6000000,
+          "file_Path": "Resources/clip.mp4",
+          "id": "r1",
+          "metetype": "video",
+          "type": 0
+        },
+        {
+          "duration": 3000000,
+          "file_Path": "Resources/music.mp3",
+          "id": "r2",
+          "metetype": "music",
+          "type": 0
+        }
+      ]
+    }
+  ],
+  "draft_name": "valid-mac",
+  "draft_root_path": "/tmp",
+  "tm_duration": 6000000
+}
