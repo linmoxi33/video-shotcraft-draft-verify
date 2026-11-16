@@ -123,7 +123,7 @@ python3 tests/test_cli.py
 
 17 tests, including 12 subprocess behaviour tests (input → findings → exit
 code), golden-output comparison and the Mac/Windows entry-drift case. Last run:
-`Ran 17 tests ... OK` in 0.665 s on Python 3.12.
+`Ran 17 tests ... OK` in about 0.7 s on Python 3.12.
 
 Fixtures are synthetic minimal drafts modelled on the format; the `.mp4`/`.mp3`
 files are placeholders, because the checks are about references, not bytes.

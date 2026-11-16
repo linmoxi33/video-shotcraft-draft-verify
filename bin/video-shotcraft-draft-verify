@@ -222,9 +222,9 @@ def verify(draft_dir, strict=False, allow_external=False):
         if kind == "external":
             sev = "error" if strict or not allow_external else "warning"
             add("J021", sev,
-                "media path escapes the draft directory: %s" % absolute, where)
+                "media path escapes the draft directory: %s" % item.get("path"), where)
         if not os.path.isfile(absolute):
-            add("J020", "error", "media file does not exist: %s" % absolute, where)
+            add("J020", "error", "media file does not exist: %s" % item.get("path"), where)
 
     meta_path = os.path.join(draft_dir, "draft_meta_info.json")
     has_meta = os.path.isfile(meta_path)
