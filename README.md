@@ -164,4 +164,4 @@ path is human eyes.
 ## License
 
 MIT. No upstream code is copied; the checks are derived from the documented
-format and the upstream doc's acceptance criteria. Upstream is MIT-licensed.
+format and the upstream doc's acceptance criteria. Upstream is Apache-2.0 licensed.
